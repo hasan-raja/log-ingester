@@ -2,3 +2,6 @@
 # Local Netlify folder
 .netlify
 .env
+.env.example
+.env.local
+.env.staging
