@@ -35,8 +35,10 @@ router.get("/logs", async (req, res) => {
 
     const total = await Log.countDocuments({
       level: { $in: [...level] },
-      name: { $regex: search, $options: "i" },
+      message: { $regex: search, $options: "i" },
     });
+
+
 
     const response = {
       error: false,
